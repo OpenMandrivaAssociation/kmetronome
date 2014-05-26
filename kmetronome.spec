@@ -12,7 +12,6 @@ URL:		http://kmetronome.sourceforge.net
 Source0:	http://sourceforge.net/projects/kmetronome/files/kmetronome/0.10.0/%{name}-%{version}.tar.bz2
 BuildRequires:	gettext
 BuildRequires:	qt4-devel
-BuildRequires:	kdesdk4-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	drumstick-devel >= 0.5.0
