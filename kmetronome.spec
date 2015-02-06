@@ -4,7 +4,7 @@
 
 Name:		kmetronome
 Version:	0.10.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Summary:	KDE MIDI Metronome using ALSA Sequencer
 Group:		Sound
