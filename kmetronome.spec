@@ -3,20 +3,23 @@
 %define debug_package %{nil}
 
 Name:		kmetronome
-Version:	0.10.1
-Release:	2
+Version:	1.2.1
+Release:	1
 License:	GPLv2+
 Summary:	KDE MIDI Metronome using ALSA Sequencer
 Group:		Sound
-URL:		http://kmetronome.sourceforge.net
-Source0:	http://sourceforge.net/projects/kmetronome/files/kmetronome/0.10.0/%{name}-%{version}.tar.bz2
+Url:		https://kmetronome.sourceforge.io/
+Source0:	https://download.sourceforge.net/kmetronome/%{name}-%{version}.tar.bz2
+
+BuildRequires:	cmake
 BuildRequires:	gettext
-BuildRequires:	qt4-devel
-BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(alsa)
-BuildRequires:	drumstick-devel >= 0.5.0
-#Requires:	kdebase4-runtime
-Requires:	drumstick >= 0.5.0
+BuildRequires:	pkgconfig(drumstick-alsa)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt5Help)
+BuildRequires:	pkgconfig(Qt5Svg)
+BuildRequires:	pkgconfig(Qt5Widgets)
 
 
 %description
@@ -29,33 +32,21 @@ sequencer.
 
 
 %prep
-%setup -q %{name}-%{version}-%{release}
-# make sure bundled drumstick isn't used
-rm -rf drumstick
-
+%autosetup -p1
 
 %build
-%cmake_kde4
-%make
-
+%cmake_qt5
+%make_build
 
 %install
-%makeinstall_std -C build
-%find_lang %{name}
+%make_install -C build
 
-
-%files -f %{name}.lang
-%doc README ChangeLog AUTHORS TODO
-%doc %{_mandir}/man1/*
-%dir %{_datadir}/apps/%{name}
-%dir %{_datadir}/icons/hicolor/24x24
-%dir %{_datadir}/icons/hicolor/24x24/apps
-%dir %{_datadir}/locale/*/*
+%files
+%doc ChangeLog AUTHORS NEWS doc/%{name}.html doc/%{name}*.png
 %{_bindir}/%{name}
-#{_datadir}/locale/*
-%{_datadir}/doc/HTML/en/%{name}/*
-%{_datadir}/applications/*/%{name}.desktop
-%{_datadir}/dbus-1/*/*
-%{_datadir}/icons/hicolor/*/*/*
-%{_datadir}/apps/*/*
+%{_datadir}/%{name}/
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/dbus-1/*/net.sourceforge.%{name}*
+%{_iconsdir}/hicolor/*/apps/%{name}.*
+%{_mandir}/man1/%{name}.1*
 
