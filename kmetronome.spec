@@ -35,7 +35,7 @@ sequencer.
 %autosetup -p1
 
 %build
-%cmake_qt5
+%cmake
 %make_build
 
 %install
@@ -49,4 +49,3 @@ sequencer.
 %{_datadir}/dbus-1/*/net.sourceforge.%{name}*
 %{_iconsdir}/hicolor/*/apps/%{name}.*
 %{_mandir}/man1/%{name}.1*
-
