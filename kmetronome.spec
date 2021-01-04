@@ -12,6 +12,7 @@ Url:		https://kmetronome.sourceforge.io/
 Source0:	https://download.sourceforge.net/kmetronome/%{name}-%{version}.tar.bz2
 
 BuildRequires:	cmake
+BuildRequires:  qmake5
 BuildRequires:	gettext
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(drumstick-alsa)
