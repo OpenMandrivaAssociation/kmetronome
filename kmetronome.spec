@@ -3,7 +3,7 @@
 %define debug_package %{nil}
 
 Name:		kmetronome
-Version:	1.2.0
+Version:	1.3.0
 Release:	1
 License:	GPLv2+
 Summary:	KDE MIDI Metronome using ALSA Sequencer
