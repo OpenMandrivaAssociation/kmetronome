@@ -37,7 +37,7 @@ sequencer.
 %autosetup -p1
 
 %build
-%cmake
+%cmake -DBUILD_DOCS=OFF
 %make_build
 
 %install
