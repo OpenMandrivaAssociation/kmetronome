@@ -44,10 +44,10 @@ sequencer.
 %make_install -C build
 
 %files
-%doc ChangeLog AUTHORS NEWS doc/%{name}.html doc/%{name}*.png
+%doc ChangeLog AUTHORS NEWS
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/net.sourceforge.kmetronome.desktop
 %{_datadir}/dbus-1/*/net.sourceforge.%{name}*
 %{_iconsdir}/hicolor/*/apps/%{name}.*
 %{_mandir}/man1/%{name}.1*
