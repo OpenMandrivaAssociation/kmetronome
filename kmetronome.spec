@@ -44,7 +44,7 @@ sequencer.
 %make_install -C build
 
 %files
-%doc ChangeLog AUTHORS NEWS %{_datadir}/doc/kmetronome/kmetronome/*/index.html
+%doc ChangeLog AUTHORS NEWS
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
 %{_datadir}/applications/net.sourceforge.kmetronome.desktop
@@ -52,3 +52,4 @@ sequencer.
 %{_datadir}/metainfo/net.sourceforge.kmetronome.appdata.xml
 %{_iconsdir}/hicolor/*/apps/%{name}.*
 %{_mandir}/man1/%{name}.1*
+%{_datadir}/doc/kmetronome/kmetronome/*/index.html
