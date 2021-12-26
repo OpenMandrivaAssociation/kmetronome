@@ -1,6 +1,7 @@
 
-%define _enable_debug_packages %{nil}
-%define debug_package %{nil}
+#define _enable_debug_packages %{nil}
+#define debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 Name:		kmetronome
 Version:	1.3.0
