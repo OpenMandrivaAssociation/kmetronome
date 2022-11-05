@@ -50,7 +50,6 @@ sequencer.
 %{_datadir}/%{name}/
 %{_datadir}/applications/net.sourceforge.kmetronome.desktop
 %{_datadir}/dbus-1/*/net.sourceforge.%{name}*
-%{_datadir}/metainfo/net.sourceforge.kmetronome.appdata.xml
 %{_iconsdir}/hicolor/*/apps/%{name}.*
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/doc/kmetronome/kmetronome/*/index.html
