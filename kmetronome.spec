@@ -4,7 +4,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:		kmetronome
-Version:	1.3.1
+Version:	1.4.0
 Release:	1
 License:	GPLv2+
 Summary:	KDE MIDI Metronome using ALSA Sequencer
