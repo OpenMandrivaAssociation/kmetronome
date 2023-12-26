@@ -16,13 +16,17 @@ BuildRequires:	cmake
 BuildRequires:  cmake(Qt6)
 BuildRequires:  qmake-qt6
 BuildRequires:	gettext
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:  cmake(Qt6LinguistTools)
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(drumstick-alsa)
+BuildRequires:  pkgconfig(xkbcommon-x11)
+BuildRequires:  pkgconfig(vulkan)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Help)
 BuildRequires:	cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6SvgWidgets)
 BuildRequires:	cmake(Qt6Widgets)
 
 
