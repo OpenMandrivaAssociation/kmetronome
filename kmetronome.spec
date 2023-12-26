@@ -13,16 +13,17 @@ Url:		https://kmetronome.sourceforge.io/
 Source0:	https://download.sourceforge.net/kmetronome/%{name}-%{version}.tar.bz2
 
 BuildRequires:	cmake
-BuildRequires:  qmake5
+BuildRequires:  cmake(Qt6)
+BuildRequires:  qmake-qt6
 BuildRequires:	gettext
-BuildRequires:  cmake(Qt5LinguistTools)
+BuildRequires:  cmake(Qt6LinguistTools)
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(drumstick-alsa)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5DBus)
-BuildRequires:	pkgconfig(Qt5Help)
-BuildRequires:	pkgconfig(Qt5Svg)
-BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Help)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:	cmake(Qt6Widgets)
 
 
 %description
